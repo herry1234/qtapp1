@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     //qpush->show();
     QObject::connect(qpush,SIGNAL(clicked()),&a,SLOT(quit()));
     QObject::connect(qpush2,SIGNAL(clicked()),&a,SLOT(quit()));
-    //qlable->show();
+//    qlable->show();
 
     //Create layout
     QHBoxLayout *layout = new QHBoxLayout;
@@ -50,8 +50,8 @@ int main(int argc, char *argv[])
     mainw->setLayout(layout);
     mainw->show();
 
-//    MainWindow w;
-//    w.show();
+    MainWindow w;
+    w.show();
     
     return a.exec();
 }
